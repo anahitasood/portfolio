@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
+<<<<<<< HEAD
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-primary">
@@ -15,6 +16,20 @@ function App() {
         <Experience />
         <Skills />
         {/* <Projects /> */}
+=======
+import './App.css';
+
+function App() {
+  return (
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      <Navbar />
+      <main className="flex-1">
+        <About />
+        <Experience />
+        <Skills />
+        {/* <Projects /> */}
+        
+>>>>>>> eee604c
         <Contact />
       </main>
       <Footer />

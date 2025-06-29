@@ -3,7 +3,11 @@ import React from 'react';
 function Projects() {
   return (
     <section id="projects" className="py-16 px-4 bg-white min-h-[60vh]">
+<<<<<<< HEAD
       <h2 className="text-3xl font-bold mb-6 text-blue-700">Projects</h2>
+=======
+      <h2 className="text-3xl font-bold mb-6 text-primary text-center">Projects</h2>
+>>>>>>> eee604c
       <div className="grid md:grid-cols-2 gap-8">
         <div className="p-6 border rounded-lg shadow bg-gray-50">
           <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>

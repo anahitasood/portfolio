@@ -31,6 +31,7 @@ export const techskills = [
         name: 'Git & GitHub',
         level: 3,
     },
+<<<<<<< HEAD
     {
         name: 'HTML',
         level: 3,
@@ -63,4 +64,6 @@ export const techskills = [
         name: 'Git & GitHub',
         level: 3,
     },
+=======
+>>>>>>> eee604c
 ]
