@@ -10,11 +10,7 @@ module.exports = {
         primary: '#124e66', // blue-600
         secondary: '#748d92', // slate-800
         accent: '#d3d9d4', // orange-400
-<<<<<<< HEAD
-        background: '#212A31', // gray-100
-=======
         background: '#212a31', // gray-100
->>>>>>> eee604c
         surface: '#ffffff',
         muted: '#2e3944', // slate-500
       },

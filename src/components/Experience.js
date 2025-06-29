@@ -3,11 +3,7 @@ import { experienceData } from '../data/experience';
 
 function Experience() {
   return (
-<<<<<<< HEAD
-    <section id="experience" className="py-12 px-4 bg-gray-50 min-h-[60vh]">
-=======
     <section id="experience" className="py-16 px-4 bg-gray-50 min-h-[60vh]">
->>>>>>> eee604c
       <h2 className="text-3xl font-bold mb-6 text-primary text-center">Experience</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         {experienceData.map((exp, index) => (
