@@ -39,7 +39,7 @@ function Contact() {
       <form ref={form} onSubmit={sendEmail} className="max-w-xl mx-auto space-y-4 bg-white/80 rounded-lg shadow-lg p-6 border-2 border-primary">
         <input type="text" name="name" placeholder="Name" className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required />
         <input type="email" name="email" placeholder="Email" className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required />
-        <textarea name="message" placeholder="Message" className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary" rows="4" required></textarea>
+        <textarea name="message" placeholder="Message" className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary" rows="9" required></textarea>
         <button type="submit" className="bg-primary text-white px-6 py-2 rounded hover:bg-secondary transition">Send</button>
         {sent === 'success' && <p className="text-green-600 mt-2">Message sent successfully!I will reach out to you shortly.</p>}
         {sent === 'error' && <p className="text-red-600 mt-2">Failed to send message. Please try again.</p>}

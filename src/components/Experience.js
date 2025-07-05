@@ -12,7 +12,11 @@ function Experience() {
             className="bg-white/80 rounded-lg shadow-lg border-2 border-accent p-6 w-full md:w-auto transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent/50 hover:backdrop-blur-sm"
           >
             <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
-            <p className="text-gray-600 mb-2">{exp.company} | {exp.duration}</p>
+            <p className="text-gray-600 mb-2 flex flex-col sm:flex-row sm:items-center gap-1">
+              <span>{exp.company}</span>
+              <span className="hidden sm:inline"> | </span>
+              <span>{exp.duration}</span>
+            </p>
             <ul className="list-disc ml-6 mt-2 text-gray-700">
               {exp.responsibilities.map((responsibility, idx) => (
                 <li key={idx}>{responsibility}</li>

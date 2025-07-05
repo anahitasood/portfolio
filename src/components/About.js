@@ -4,7 +4,7 @@ import SocialsPopup from './SocialsPopup';
 function About() {
   const [popupOpen, setPopupOpen] = useState(false);
   return (
-    <section id="about" className="py-16 px-4 bg-background min-h-[60vh] md:min-h-[90vh] md:h-[90vh] relative overflow-hidden">
+    <section id="about" className="py-16 px-4 bg-background min-h-[50vh] md:min-h-[85vh] md:h-[85vh] relative overflow-hidden">
       {/* Responsive animated blobs */}
       <span className="absolute -top-10 left-1/4 w-32 h-32 sm:-top-16 sm:w-44 sm:h-44 bg-primary opacity-25 rounded-full filter blur-2xl z-0 animate-blob1" style={{clipPath: 'ellipse(60% 40% at 50% 50%)'}}></span>
       <span className="absolute top-4 left-4 w-8 h-8 sm:top-10 sm:left-10 sm:w-12 sm:h-12 bg-accent opacity-40 rounded-full filter blur-2xl z-0 animate-blob2" style={{clipPath: 'ellipse(70% 50% at 50% 50%)'}}></span>
@@ -19,34 +19,35 @@ function About() {
       <span className="absolute top-1/2 left-2/3 w-10 h-10 sm:w-20 sm:h-20 bg-accent opacity-20 rounded-full filter blur-2xl z-0 animate-blob6" style={{clipPath: 'ellipse(60% 40% at 50% 50%)'}}></span>
       <span className="absolute bottom-1/3 right-1/2 w-24 h-24 sm:w-52 sm:h-52 bg-primary opacity-10 rounded-full filter blur-2xl z-0 animate-blob1" style={{clipPath: 'ellipse(60% 40% at 50% 50%)', transform: 'translate(50%, 0)'}}></span>
 
-      <div className="flex flex-col sm:flex-row items-center sm:items-end gap-8 h-full relative z-10">
+      <div className="flex flex-col sm:flex-row items-center sm:items-end md:gap-8 h-full relative z-10">
         {/* Left: Image (on all screens), Contact Me button (only on sm+) */}
         <div className="flex flex-col items-center w-full sm:w-1/2 justify-end h-full">
           <img
-            src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=400&facepad=2&q=80"
+            src="/imagelogo.png"
             alt="Anahita Sood"
-            className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full mb-4 object-cover mx-auto relative z-10"
+            className="mx-auto relative z-10 mb-1 sm:mb-2"
+            style={{ display: 'block', width: '60%' }}
           />
           {/* Contact Me button only on sm+ */}
           <button
             onClick={() => setPopupOpen(true)}
-            className="hidden sm:block mt-2 px-6 py-2 bg-primary text-surface rounded shadow hover:scale-110 transition text-center relative z-10"
+            className="hidden sm:block px-10 py-4 text-lg bg-primary text-surface rounded shadow hover:scale-110 transition text-center relative z-10"
           >
             Contact Me
           </button>
           <SocialsPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
         {/* Right: Name, Title, Description, and Contact Me button (on mobile) */}
-        <div className="w-full sm:w-1/2 flex flex-col justify-end h-full items-start">
-          <h3 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-white text-left mb-2 relative z-10">Anahita Sood</h3>
-          <p className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-semibold text-secondary text-left mb-4 relative z-10">Software Engineer</p>
-          <p className="mt-2 text-base xs:text-lg sm:text-xl text-secondary">
+        <div className="w-full sm:w-1/2 flex flex-col justify-end h-full items-center sm:items-start">
+          <h3 className="text-lg xs:text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-white text-center sm:text-left mb-2 relative z-10">Anahita Sood</h3>
+          <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-secondary text-center sm:text-left mb-4 relative z-10">Software Engineer</p>
+          <p className="mt-2 text-sm xs:text-base sm:text-lg md:text-xl text-secondary text-center sm:text-left">
             I am a passionate frontend developer with a keen interest in building responsive and user-friendly web applications. My skills include modern JavaScript frameworks, CSS preprocessors, and version control systems. I enjoy collaborating with teams to create seamless user experiences.
           </p>
           {/* Contact Me button only on mobile */}
           <button
             onClick={() => setPopupOpen(true)}
-            className="block sm:hidden mt-4 px-6 py-2 bg-primary text-surface rounded shadow hover:scale-110 transition text-center relative z-10"
+            className="block sm:hidden mt-6 px-6 py-2 text-base sm:px-10 sm:py-4 sm:text-lg bg-primary text-surface rounded shadow hover:scale-110 transition text-center relative z-10"
           >
             Contact Me
           </button>
