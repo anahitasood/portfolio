@@ -42,8 +42,7 @@ function About() {
           <h3 className="text-lg xs:text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-white text-center sm:text-left mb-2 relative z-10">Anahita Sood</h3>
           <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-secondary text-center sm:text-left mb-4 relative z-10">Software Engineer</p>
           <p className="mt-2 text-sm xs:text-base sm:text-lg md:text-xl text-secondary text-center sm:text-left">
-            I am a passionate frontend developer with a keen interest in building responsive and user-friendly web applications. My skills include modern JavaScript frameworks, CSS preprocessors, and version control systems. I enjoy collaborating with teams to create seamless user experiences.
-          </p>
+           Hi! I’m Anahita Sood, a passionate Software Engineer with a strong foundation in frontend development and integration solutions. I specialize in building modern, responsive user interfaces using React.js, Redux, and TypeScript, and have hands-on experience in integrating systems using MuleSoft and RESTful APIs.</p>
           {/* Contact Me button only on mobile */}
           <button
             onClick={() => setPopupOpen(true)}

@@ -86,17 +86,5 @@ export const techskills = [
     {
         name: 'RESTful API',
         level: 4,
-    },
-    {
-        name: 'Technical Writing',
-        level: 4,
-    },
-    {
-        name: 'Vulnerability Remediation',
-        level: 3,
-    },
-    {
-        name: 'Problem Solving',
-        level: 5,
-    },
+    }
 ]
