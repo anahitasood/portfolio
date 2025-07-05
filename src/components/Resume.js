@@ -11,13 +11,13 @@ function Resume() {
           className="w-full h-[60vh] md:h-[80vh]"
         />
       </div>
-      {/* <a
+      <a
         href="/AnahitaSood_Resume.pdf"
         download
-        className="inline-block px-8 py-3 bg-primary text-surface font-semibold rounded shadow hover:bg-secondary transition"
+        className="inline-block px-8 py-3 bg-primary text-surface font-semibold rounded shadow hover:bg-secondary transition block sm:hidden"
       >
         Download Resume
-      </a> */}
+      </a>
     </section>
   );
 }
